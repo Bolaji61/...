@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chess</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+	<script>
+		// 
+
+		 function startTime(){
+ 			var today = new Date();
+ 			var h = today.getHours();
+ 			var m = today.getMinutes();
+ 			var s = today.getSeconds();
+ 			m =checkTime(m);
+ 			s = checkTime(s);
+ 			document.getElementById("txt").innerHTML = h +":" + m +":" + s;
+ 			var t = setTimeout(startTime, 1000);
+ 		}
+ 		function checkTime(i){
+ 			if (i < 10) {
+ 				i = "0" + i}; //add zero in front of any number less than 10
+ 				return i;
+ 		}
+
+	</script>
+	<style>
+		body {
+			background-color: #d3d3d3;
+			width: 100%;
+			@media (max-width: 700px) {
+				width: 100%
+			}
+		}
+		h1 {
+			color: #1194d1;
+			font-family: sans-serif;
+			border: 1px solid #d3d3d3;
+			padding-left: 4px;
+			margin-top: 0;
+			margin-right: 0;
+		}
+		.main {
+			background: linear-gradient(to bottom, #d3d3d3, #8b4513);
+			float: none;
+			width: 100%;
+		}
+		#navBar{
+			border: 2px solid #d3d3d3;
+			padding-left: 5px;
+		}
+		img {
+			width: 50%;
+			padding-right: 50%;
+			display: inline-block;
+		}
+		#signUpBox{
+			border: 1px solid #d3d3d3;
+			padding-left: 4px;
+			background-color: #8b4513;
+			width: 40%;
+			color: #ffdead;
+			display: inline-block;
+			margin-left: 0px;
+			
+		}
+		#footer {
+			background-color: #8b4513;
+			margin-top: 0;
+			padding-left: 20px;
+			padding-top: 1%;
+			padding-bottom: 0.25px;
+			padding-right: 20px;
+			text-align: center;
+			line-height: normal;
+			font-size: 100%;
+
+
+		}
+
+	</style>
+</head>
+<body onload="startTime()">
+     <h1>A WebPage for CHESS Lovers</h1>
+
+     	s
+
+     <br>
+     <div id="navBar">
+     	HOME About_Us Sign_Up
+     </div>
+    <div>
+     <img src="images (3).jpg">
+    </div>
+                <div id="signUpBox">
+     				<h2> SignIn to play Chess Online</h2>
+     				<form method="GET">
+     					<label>EMAIL:
+     						<input type="email" name="Email" placeholder="enter your email" required>
+     					</label>
+     					<br>
+     					<label>PASSWORD:
+     						<input type="password" name="Password"  placeholder="password" pattern=".{6,}" required title="Password must be at least 6 characters">
+     					</label>
+     					<button>
+     						Submit
+     					</button>
+     					<p>Don't already have an account?
+     					<br> Sign up for free <a href="signUp.html">here</a></p>
+     				</form>
+     			</div>
+     	
+     <div class="main">
+     	<h3><u>Brief Introduction</u></h3>
+     	<p>
+     		Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an 8×8 grid.[1] The game is played by millions of people worldwide.
+     	</p>
+     	<p>
+     		Chess is believed to have originated in India sometime before the 7th century. The game was derived from the Indian game chaturanga, which is also the likely ancestor of the Eastern strategy games xiangqi, janggi, and shogi. (A minority view holds that chess originated in China.) The pieces assumed their current powers in Spain in the late 15th century; the rules were standardized in the 19th century.
+     	</p>
+     	<p>
+     		The game is played by millions of people worldwide. Each player begins with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. Each of the six piece types moves differently, with the most powerful being the queen and the least powerful the pawn. The objective is to checkmate[note 1] the opponent's king by placing it under an inescapable threat of capture. To this end, a player's pieces are used to attack and capture the opponent's pieces, while supporting each other. In addition to checkmate, the game can be won by voluntary resignation of the opponent, which typically occurs when too much material is lost or checkmate appears inevitable. There are also several ways a game can end in a draw.
+     	</p>
+     </div>
+     <div id="footer">
+     	<h4>Contact Us</h4>
+     	<span>
+     		Instagram: holuuwatosin
+     		<br>
+     		Whatsapp: 09096408268
+     	</span>
+     	<br>
+     	<div id="txt"> </div>
+     	<hr><h5>&copy;2018</span></h5>
+     </div>	
+</body>
+</html>
