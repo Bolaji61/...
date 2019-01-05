@@ -1,2 +1,1 @@
-# ...
-Just a webpage that's crap
+A novice webpage about Chess
